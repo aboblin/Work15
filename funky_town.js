@@ -8,8 +8,8 @@ var fibonacci = function(n) {
 
 var gcd = function(a, b) {
     if (a == b) {return a;}
-    if (a > b) {gcd(b,a - b);}
-    if (b > a) {gcd(a,b - a);}
+    if (a > b) {return gcd(b,a - b);}
+    if (b > a) {return gcd(a,b - a);}
 }
 
 var randomList = function(n, list){
